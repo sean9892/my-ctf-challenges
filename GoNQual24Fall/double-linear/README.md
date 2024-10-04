@@ -15,4 +15,4 @@ Also available at: https://dreamhack.io/wargame/challenges/1539
 
 # Writeup
 
-- [intended solution](solution/writeup.md)
+- [intended solution](solution/README.md)
