@@ -17,15 +17,15 @@ Thus every operation including keyed permutation and sbox in AES' is linear, whi
 The linearity of full AES' implies the existence of the $128\times129$ matrix $E$ such that:
 
 $$
-E(x|| 1) = AES^\prime(x)
+E(x\Vert 1) = AES^\prime(x)
 $$
 
 From this, we can find for all $x,y\in{\mathbb{F}_2}^{128}$,
 
 $$
 \begin{align}
-AES^\prime(x)+AES^\prime(y) &=& E((x|| 1)+(y|| 1))\\
-&=& E((x+y)|| 0)
+AES^\prime(x)+AES^\prime(y) &=& E((x\Vert 1)+(y\Vert 1))\\
+&=& E((x+y)\Vert 0)
 \end{align}
 $$
 
