@@ -14,19 +14,27 @@ sage: SBox(sbox).nonlinearity()
 
 Thus every operation including keyed permutation and sbox in AES' is linear, which lays a huge problem.
 
-The linearity of full AES' implies the existence of $128\times129$ matrix $M$ such that:
+The linearity of full AES' implies the existence of the $128\times129$ matrix $E$ such that:
 
 $$
-M\times(x\vert\vert 1) = AES^\prime(x)
+E(x|| 1) = AES^\prime(x)
 $$
 
-From this, we can find:
+From this, we can find for all $x,y\in{\mathbb{F}_2}^{128}$,
 
 $$
-\forall x,y\in {\mathbb{F}_2}^{128}\\
 \begin{align}
-AES^\prime(x)+AES^\prime(y) &=& M\times((x\vert\vert 1)+(y\vert\vert 1))\\
-&=& M\times((x+y)\vert\vert 0)
+AES^\prime(x)+AES^\prime(y) &=& E((x|| 1)+(y|| 1))\\
+&=& E((x+y)|| 0)
 \end{align}
 $$
 
+Thus $E^\prime$, which is $E$ removed its last column, is an invertible matrix satisfying $AES^\prime(x)+AES^\prime(y)=E^\prime(x+y)$.
+
+Trivially multiplication over a polynomail ring ${\mathbb{F}_2}/f(x)$ is a linear transformation, i.e. there exists the corresponding $128\times 128$ matrix $M$.
+
+So, we can recover the seed $s$ by the following calculation where $o_1$ and $o_2$ are two given ciphertext.
+
+$$
+s = (M+I_{128})^{-1}M^{-100}{E^\prime}^{-1}(o_1+o_2)
+$$
