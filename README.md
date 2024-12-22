@@ -5,3 +5,7 @@ CTF Challenges I made
 
 - [King of Yacht](GoNQual24Fall/king-of-yacht)(Crypto)
 - [Double Linear](GoNQual24Fall/double-linear)(Crypto)
+
+## etc
+
+- [BabyHash](etc/babyhash/)(Crypto)
