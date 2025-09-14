@@ -4,6 +4,7 @@ CTF Challenges I made
 ## KAIST GoN 2025Spring Qual
 
 - [Verhältnis](GoNQual25Spring/verhaltnis)(Crypto)
+- [Hoshimachi](GoNQual25Spring/hoshimachi)(Crypto)
 
 ## KAIST GoN 2024Fall Qual
 
@@ -12,4 +13,4 @@ CTF Challenges I made
 
 ## etc
 
-- [BabyHash](etc/babyhash/)(Crypto)
+- [BabyHash](etc/babyhash/)(2024 HSPACE Belluminar CTF, Crypto)
