@@ -1,0 +1,1 @@
+flag = "GoN{Is_this_practical?_IDK_but_it_seemed_funny}"
