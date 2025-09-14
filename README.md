@@ -1,5 +1,9 @@
-# my-ctf-challenge
+# my-ctf-challenges
 CTF Challenges I made
+
+## KAIST GoN 2025Spring Qual
+
+- [Verhältnis](GoNQual25Spring/verhaltnis)(Crypto)
 
 ## KAIST GoN 2024Fall Qual
 
