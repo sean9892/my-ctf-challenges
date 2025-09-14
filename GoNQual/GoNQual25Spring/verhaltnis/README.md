@@ -14,6 +14,8 @@ Let's go on a mild warm-up.
 
 Push yourself to the limit.
 
+Also available at: https://dreamhack.io/wargame/challenges/2293
+
 ## Summary
 
 Easy: small integer ratio recovery over finite field using lattice reduction
